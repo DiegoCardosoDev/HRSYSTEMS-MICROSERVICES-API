@@ -23,7 +23,7 @@ public class PayRollService {
 
     @GetMapping(value = "/{workedId}")
     public PayRoll getpayment(Long workedId, PayRoll payRoll) {
-        log.info("PAYROLL_SERVICE ::: Get Request on " + env.getProperty("local.server.port ") + " port");
+        log.info("PAYROLL_SERVICE ::: Get Request on " + env.getProperty("local.server.port ") + "port");
         try {
 
             var user = feing.findById(workedId).getBody();
