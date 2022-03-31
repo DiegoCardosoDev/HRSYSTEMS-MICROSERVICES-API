@@ -24,7 +24,7 @@ public class UserApiApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         userRepo.saveAll(List.of(
 
-                new User(null, "DiegoCardoso", "diegocardososacramento.com", "12345", 20.0)
+                new User(null, "Diego Cardoso", "diegocardososacramento.com", "12345", 40.0)
 
         ));
 
