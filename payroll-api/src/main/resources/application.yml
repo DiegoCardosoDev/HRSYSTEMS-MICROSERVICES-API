@@ -1,6 +1,8 @@
-
-  spring:
-    application:
-      name: payroll-api
-  server:
-    port: 8100
+spring:
+  application:
+    name: payroll-api
+server:
+  port: 8100
+  eureka:
+    service-url:
+      default-zone: ${EUREKA_URL:http://localhost:8761/eureka}
